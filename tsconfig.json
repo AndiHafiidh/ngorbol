@@ -10,6 +10,11 @@
     "allowSyntheticDefaultImports": true,
     "sourceMap": true,
     "baseUrl": ".",
+    "noImplicitAny": false,
+    "noImplicitReturns": true,
+    "noImplicitThis": true, 
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
     "types": [
       "webpack-env",
       "jest"
