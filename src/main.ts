@@ -5,22 +5,17 @@ import store from './store';
 import './registerServiceWorker';
 
 // import library
+import Antd from 'ant-design-vue';
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue';
-import SimpleLineIcons from 'vue-simple-line';
-// install library
 
+Vue.use(Antd);
 Vue.use(BootstrapVue);
 Vue.use(IconsPlugin);
-
-Vue.component('simple-line-icons', SimpleLineIcons);
 
 Vue.config.productionTip = false;
 
 new Vue({
   router,
   store,
-  components: {
-    SimpleLineIcons,
-  },
   render: (h) => h(App),
 }).$mount('#app');
